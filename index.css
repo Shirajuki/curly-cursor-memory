@@ -1,0 +1,92 @@
+/*
+#DAF7A6
+#FFC300
+#FF5733
+#C70039
+#900C3F
+#581845
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+body {
+  background-color: #271f25;
+  color: #fff;
+  overflow-x: hidden;
+}
+header {
+  height: 60px;
+  width: 100%;
+  background-color: #900c3f;
+  position: fixed;
+  z-index: 1000;
+}
+main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: azure;
+}
+.splash {
+  height: 100vh;
+  padding-top: 60px;
+  width: 100%;
+  background-color: #ff5733;
+}
+a.link {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+a.link:hover .linkImg {
+  transform: scale(1.1);
+  filter: invert(45%) sepia(87%) saturate(4089%) hue-rotate(332deg)
+    brightness(116%) contrast(121%);
+}
+.linkImg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  transition: all 0.1s ease-out;
+  filter: invert(100%);
+}
+.content {
+  height: 200px;
+  width: 100%;
+  background-color: #c70039;
+}
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #581845;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customCursorWrapper {
+  pointer-events: none;
+}
+#customCursorCircle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#customCursorDot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
